@@ -1,0 +1,14 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "teste-postgres",
+    "password": "typeorm",
+    "database": "teste-postgres",
+    "entities": [
+       "src/app/models/*.ts"
+    ],
+    "migrations": [
+       "src//database/migration/*.ts"
+    ]
+ }
