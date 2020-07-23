@@ -5,7 +5,8 @@
   "repository": "https://github.com/Kiritojr/TypeORM.git",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec ts-node src/index.ts"
+    "dev": "npx nodemon --exec ts-node src/index.ts",
+    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
