@@ -1,17 +1,17 @@
 {
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "teste-postgres",
-    "password": "typeorm",
-    "database": "teste-postgres",
-    "entities": [
-       "src/app/models/*.ts"
-    ],
-    "migrations": [
-       "src/database/migrations/*.ts"
-    ],
-    "cli": {
-        "migrationsDir": "src/database/migrations"
-    }
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "1234",
+  "database": "postgres",
+  "entities": [
+     "src/app/models/*.ts"
+  ],
+  "migrations": [
+     "src/database/migrations/*.ts"
+  ],
+  "cli": {
+      "migrationsDir": "src/database/migrations"
+  }
  }
