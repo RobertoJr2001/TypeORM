@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 
-import Users from '../models/User'
+import Users from '../models/User';
 
 class UserController {
 
@@ -10,7 +10,7 @@ class UserController {
     const repository = getRepository(Users);
     const { email, password } = req.body;
 
-    const userExist = repository.findOne({ where: { email } });
+    const userExist = await repository.findOne({ where: { email } });
 
     if (userExist) {
       res.sendStatus(409);
