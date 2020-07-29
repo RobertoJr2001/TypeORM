@@ -22,6 +22,11 @@ class UserController {
 
     res.json(user);
   }
+
+  index (req: Request, res: Response) {
+
+  res.send('OK');
+  }
 }
 
 export default new UserController();
